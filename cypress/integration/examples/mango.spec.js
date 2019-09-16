@@ -21,5 +21,14 @@ describe('Mango Challenge', () =>{
 
 function closeModal() {
     cy.wait(5000);
-    cy.get('.icon.closeModal.icon__close.desktop.confirmacionPais').click();
+    cy.get('.icon.closeModal.icon__close.desktop.confirmacionPais').then(($modal) => {
+        if ($modal.should('be.visible')){
+            $modal.click()
+        }
+    });/*
+    if ($element.find()){
+        cy.get('.icon.closeModal.icon__close.desktop.confirmacionPais').click();
+        cy.fin
+    }*/
+    
 }
