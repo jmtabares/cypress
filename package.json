@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:headed": "cypress run --headed",
+    "cy:chrome": "cypress run --browser chrome",
+    "cy:chromespec": "cypress run --browser chrome --spec",
+    "cy:spec": "cypress run --spec",
+    "update": "npm i cypress@latest" 
   },
   "author": "jair.tabares",
   "license": "ISC",
